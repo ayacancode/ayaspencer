@@ -145,6 +145,7 @@ main.home-main {
   width: 150px;
   height: 197px;
   object-fit: cover;
+  object-position: 85% center;
   flex-shrink: 0;
 }
 
