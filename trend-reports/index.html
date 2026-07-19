@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trend Reports — Aya Spencer</title>
+<meta name="description" content="Trend reports by Aya Spencer.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="/">Aya Spencer</a>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <details class="nav-dropdown">
+      <summary>Writing</summary>
+      <div class="dropdown-menu">
+        <a href="/trend-reports/" class="active">Trend reports</a>
+        <a href="https://ayaspencer.notion.site/a971c97461a3445c9ed015e1d38208d3?pvs=4&amp;v=6cd60fe3b17946ec83a55cfa1d09484c" target="_blank" rel="noopener">Notion</a>
+      </div>
+    </details>
+    <details class="nav-dropdown">
+      <summary>Analysis</summary>
+      <div class="dropdown-menu">
+        <a href="https://ayacancode.github.io/manipulation-check/" target="_blank" rel="noopener">Stock manipulation check</a>
+        <a href="https://ayacancode.github.io/winning-startup-intelligence/" target="_blank" rel="noopener">Startup signal intelligence</a>
+      </div>
+    </details>
+  </nav>
+</header>
+
+<main class="reports-main">
+  <h1 class="reports-title">Trend Reports</h1>
+
+  <div class="report-card">
+    <p>This 65-slide presentation explores the rapidly evolving U.S. AgeTech landscape, combining demographic trends, AI innovation, startup ecosystem analysis, investor activity, and expert insights to identify the most significant opportunities shaping the future of aging.</p>
+    <h2>2026 Agetech &amp; AI Trends</h2>
+    <a class="download-btn" href="/reports/2026-agetech-ai-trends.pdf" download>Download Report</a>
+  </div>
+
+  <div class="report-card">
+    <p>This comprehensive 53-slide presentation explores various facets of the fertility tech landscape within the US market. It investigates issues like infertility prevalence among both genders and highlights the diverse array of startups pioneering innovations in this field.</p>
+    <h2>Fertility Tech Trends in the United States (Q1 2024)</h2>
+    <a class="download-btn" href="/reports/fertility-tech-trends-us-2024.pdf" download>Download Report</a>
+  </div>
+
+  <div class="report-card">
+    <p>This 47-slide presentation delves into Japan&rsquo;s innovative Agetech sector, highlighting the nation&rsquo;s unique approach to customization and personalization. I also explore Japan&rsquo;s journey toward digital transformation and its strategies to address challenges posed by an aging population.</p>
+    <h2>Personalization Tech Trends in Japan (2023)</h2>
+    <a class="download-btn" href="/reports/personalization-tech-trends-japan-2023.pdf" download>Download Report</a>
+  </div>
+</main>
+
+<footer>
+  <a href="https://www.linkedin.com/in/aya-spencer/" target="_blank" rel="noopener">LinkedIn</a>
+</footer>
+
+<script>
+document.querySelectorAll('.nav-dropdown').forEach(function (menu) {
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target)) menu.open = false;
+  });
+});
+</script>
+
+</body>
+</html>

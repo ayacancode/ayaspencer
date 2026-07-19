@@ -178,6 +178,49 @@ footer a {
   color: var(--text-muted);
 }
 
+.reports-title {
+  margin-bottom: 48px;
+}
+
+.report-card {
+  padding: 32px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.report-card:first-of-type {
+  border-top: none;
+}
+
+.report-card p {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 16px;
+}
+
+.report-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 0 18px;
+}
+
+.download-btn {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 10px 20px;
+}
+
+.download-btn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
 @media (max-width: 480px) {
   .site-header { padding: 20px; }
   nav.site-nav { gap: 20px; font-size: 15px; }
