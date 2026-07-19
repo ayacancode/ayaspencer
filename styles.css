@@ -73,6 +73,58 @@ nav.site-nav a:hover {
   opacity: 0.7;
 }
 
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown summary {
+  color: var(--text);
+  cursor: pointer;
+  padding-bottom: 4px;
+  list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown summary::after {
+  content: " \25BE";
+  font-size: 12px;
+}
+
+.nav-dropdown[open] summary {
+  border-bottom: 2px solid var(--text);
+}
+
+.nav-dropdown:hover summary {
+  opacity: 0.7;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 8px 0;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+}
+
+.dropdown-menu a {
+  padding: 8px 16px;
+  color: var(--text);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.dropdown-menu a:hover {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
 main {
   max-width: 620px;
   margin: 0 auto;

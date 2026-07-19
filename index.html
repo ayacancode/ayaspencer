@@ -13,7 +13,13 @@
   <a class="wordmark" href="/">Aya Spencer</a>
   <nav class="site-nav">
     <a href="/" class="active">Home</a>
-    <a href="https://ayaspencer.notion.site" target="_blank" rel="noopener">Writing</a>
+    <details class="nav-dropdown">
+      <summary>Writing</summary>
+      <div class="dropdown-menu">
+        <a href="https://ayacancode.github.io" target="_blank" rel="noopener">Trend reports</a>
+        <a href="https://ayaspencer.notion.site/a971c97461a3445c9ed015e1d38208d3?pvs=4&amp;v=6cd60fe3b17946ec83a55cfa1d09484c" target="_blank" rel="noopener">Notion</a>
+      </div>
+    </details>
     <a href="https://ayacancode.github.io" target="_blank" rel="noopener">Analysis</a>
   </nav>
 </header>
@@ -36,6 +42,14 @@
 <footer>
   <a href="https://www.linkedin.com/in/aya-spencer/" target="_blank" rel="noopener">LinkedIn</a>
 </footer>
+
+<script>
+document.querySelectorAll('.nav-dropdown').forEach(function (menu) {
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target)) menu.open = false;
+  });
+});
+</script>
 
 </body>
 </html>
