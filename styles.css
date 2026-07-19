@@ -131,6 +131,28 @@ main {
   padding: 64px 24px 96px;
 }
 
+main.home-main {
+  max-width: 760px;
+}
+
+.intro {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.portrait {
+  width: 220px;
+  height: 290px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
 h1 {
   font-size: 34px;
   font-style: italic;
@@ -219,6 +241,11 @@ footer a {
 .download-btn:hover {
   background: var(--text);
   color: var(--bg);
+}
+
+@media (max-width: 600px) {
+  .intro { flex-direction: column; }
+  .portrait { width: 160px; height: 210px; }
 }
 
 @media (max-width: 480px) {
