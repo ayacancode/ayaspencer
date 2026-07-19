@@ -142,8 +142,8 @@ main.home-main {
 }
 
 .portrait {
-  width: 220px;
-  height: 290px;
+  width: 150px;
+  height: 197px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -245,7 +245,7 @@ footer a {
 
 @media (max-width: 600px) {
   .intro { flex-direction: column; }
-  .portrait { width: 160px; height: 210px; }
+  .portrait { width: 120px; height: 158px; }
 }
 
 @media (max-width: 480px) {
