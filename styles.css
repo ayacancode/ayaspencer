@@ -104,7 +104,8 @@ nav.site-nav a:hover {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: auto;
+  right: 0;
   margin-top: 12px;
   display: flex;
   flex-direction: column;
@@ -112,11 +113,6 @@ nav.site-nav a:hover {
   padding: 8px 0;
   background: var(--bg);
   border: 1px solid var(--rule);
-}
-
-.nav-dropdown:last-of-type .dropdown-menu {
-  left: auto;
-  right: 0;
 }
 
 .dropdown-menu a {
